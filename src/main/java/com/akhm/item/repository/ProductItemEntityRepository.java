@@ -9,5 +9,6 @@ import com.akhm.item.repository.entity.ProductItemEntity;
 
 @Repository
 public interface ProductItemEntityRepository extends JpaRepository<ProductItemEntity, UUID> {
+	boolean existsByItemCode(String itemCode);
 
 }
